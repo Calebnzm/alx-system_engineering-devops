@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "alias ls='ls'" >> ~/.bash_profile && source ~/.bash_profile
+echo "alias ls='ls'" >> ~/.bash_profile && source ~/.bash_profile; echo ""
