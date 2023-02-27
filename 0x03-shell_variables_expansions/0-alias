@@ -1,2 +1,2 @@
 #!/bin/bash
-(echo "alias ls='ls'"; source ~/.bash_profile; echo "") >> ~/.bash_profile
+echo "alias ls='ls -FG'" >> ~/.bashrc && source ~/.bashrc
