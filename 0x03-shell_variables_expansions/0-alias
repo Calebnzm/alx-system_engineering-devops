@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "alias ls='ls -FG'" >> ~/.bashrc && source ~/.bashrc
+#!/bin/bashecho "alias ls='ls -FG'" >> ~/.bashrc
+source ~/.bashrc
