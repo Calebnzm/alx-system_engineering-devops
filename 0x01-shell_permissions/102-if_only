@@ -1,2 +1,2 @@
 #!/bin/bash
-[ "$(stat -c '%U:%G' hello)" = "guillaume:guillaume" ] | sudo chown betty:betty hello
+[ "$(stat -c '%U:%G' hello)" = "guillaume:guillaume" ] | sudo chown root:root hello
