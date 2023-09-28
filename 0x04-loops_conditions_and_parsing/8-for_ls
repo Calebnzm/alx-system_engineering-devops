@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# prints all files in the directory
+
+for item in *; do
+    if [ -e "$item" ] && [ ! -d "$item" ] && [[ "$item" != .* ]]; then
+        name_without_prefix=$(echo "$item" | cut -d'-' -f2-)
+        echo "$name_without_prefix"
+    fi
+done
+
+
