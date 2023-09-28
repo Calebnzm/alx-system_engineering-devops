@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# prints Best school 10 times using untill
+
+# initialize counter
+counter=0
+
+# untill loop
+until [ $counter -ge 10 ]; do
+    echo "Best School"
+    ((counter++))
+done
