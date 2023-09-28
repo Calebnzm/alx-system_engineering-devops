@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# prints Best school 10 time =s and hi after the ninth
+
+# initialize counter
+counter=0
+
+# loop
+while [ $counter -le 10 ]; do
+    if [ $counter -eq 9 ]; then
+        echo "Best School"
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+
+    ((counter++))
+done
