@@ -5,8 +5,8 @@
 counter=0
 
 # loop
-while [ $counter -le 10 ]; do
-    if [ $counter -eq 9 ]; then
+while [ $counter -lt 10 ]; do
+    if [ $counter -eq 8 ]; then
         echo "Best School"
         echo "Hi"
     else
