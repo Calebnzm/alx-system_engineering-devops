@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Kils a procces without using kill
+
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+if [ -n "$pid" ]; then
+    pkill -g "$pid"
+    echo "Terminated"
+else
+    echo "Not running"
+fi
