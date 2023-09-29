@@ -3,4 +3,3 @@
 # shellcheck disable=SC2009
 
 ps -e | grep bash | grep -v grep
-
