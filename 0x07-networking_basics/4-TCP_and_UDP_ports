@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This shows the listening TCP nad UDP ports
+
+echo "Active Internet connections (only servers)"
+sudo ss -plntu | awk 'NR<3 || $6 == "LISTEN" {print $1, $2, $3, $4, $5, $6, $7}'
+echo "Active UNIX domain sockets (only servers)"
+sudo ss -plnx | awk 'NR<3 || $6 == "LISTEN" {print $1, $2, $3, $4, $5, $6, $7}'
